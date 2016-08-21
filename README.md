@@ -11,7 +11,7 @@ Install [Yeoman](http://yeoman.io)
 npm install -g yo
 ```
 
-Install generator-wp-underscores
+Install generator-sage
 
 ```
 npm install -g generator-sage
