@@ -4,7 +4,6 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 var fs = require('fs');
 var chalk = require('chalk');
-var rimraf = require('rimraf');
 
 var SageGenerator = module.exports = function SageGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
@@ -94,11 +93,11 @@ function findandreplace(dir) {
       self.log.info('Find and replace sage in ' + chalk.yellow(file));
       var data = fs.readFileSync(file, 'utf8');
       var result;
-
-      result = data.replace(/Roots\\Sage/g, + self.namespace);
+      result = data.replace(/Roots\\Sage/g, self.namespace);
       result = result.replace(/'sage'/g, "'" + _.slugify(self.themename) + "'");
       result = result.replace(/\$sage/g, "$" + _.underscored(_.slugify(self.themename)));
-      result = result.replace(/sage\//g, _.slugify(self.themename) + "/");
+      result = result.replace(/Sage includes/g, self.themename + " includes");
+      result = result.replace(/'sage\//g, "'" + _.slugify(self.themename) + "/");
 
       if (file == 'style.css') {
         result = result.replace(/sage/g, _.slugify(self.themename));
@@ -144,12 +143,3 @@ SageGenerator.prototype.initacf = function initacf() {
     this.copy('_gitkeep', 'acf-json/.gitkeep');
   }
 };
-
-// To do:
-
-// 1. Handle package.json search & replace
-// 2. Ask for soil modules and update lib/setup.php
-//   - If GA soil module is active, ask for Google Analytics and update lib/setup.php
-// 3. Choose the frontend framework (bootstrap should not be the only choice)
-// 4. Allow options to be passed from command line
- 

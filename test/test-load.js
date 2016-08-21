@@ -3,7 +3,7 @@
 
 var assert  = require('assert');
 
-describe('wp-underscores generator', function () {
+describe('sage generator', function () {
   it('can be imported without blowing up', function () {
     var app = require('../app');
     assert(app !== undefined);
