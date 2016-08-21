@@ -150,3 +150,4 @@ SageGenerator.prototype.initacf = function initacf() {
 // 1. Handle package.json search & replace
 // 2. Ask for soil modules and update lib/setup.php
 //   - If GA soil module is active, ask for Google Analytics and update lib/setup.php
+// 3. Choose the frontend framework (bootstrap should not be the only choice)
