@@ -1,29 +1,31 @@
 {
-  "name": "generator-wp-underscores",
-  "version": "0.0.4",
-  "description": "Yeoman generator for _s starter theme",
+  "name": "generator-sage",
+  "version": "0.1.0",
+  "description": "Yeoman generator for sage starter theme",
   "keywords": [
     "yeoman-generator",
     "wordpress",
-    "_s",
-    "underscores"
+    "wp",
+    "sage",
+    "roots"
   ],
-  "homepage": "https://github.com/kdo/generator-wp-underscores",
-  "bugs": "https://github.com/kdo/generator-wp-underscores/issues",
+  "homepage": "https://github.com/pierre-dargham/generator-sage",
+  "bugs": "https://github.com/pierre-dargham/generator-sage/issues",
   "author": {
-    "name": "Karine"
+    "name": "Pierre Dargham"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kdo/generator-wp-underscores.git"
+    "url": "git://github.com/pierre-dargham/generator-sage.git"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
     "yeoman-generator": "~0.13.0",
-    "chalk": "~0.2.0"
+    "chalk": "~0.2.0",
+    "rimraf": "^2.2.0"
   },
   "devDependencies": {
     "mocha": "~1.12.0"

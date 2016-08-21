@@ -1,6 +1,6 @@
-# generator-wp-underscores [![Build Status](https://secure.travis-ci.org/kdo/generator-wp-underscores.png?branch=master)](https://travis-ci.org/kdo/generator-wp-underscores)
+# generator-sage
 
-A very simple [Yeoman](http://yeoman.io) generator for WordPress starter theme [_s](github.com/automattic/_s).
+A very simple [Yeoman](http://yeoman.io) generator for WordPress starter theme [sage](roots.io/sage).
 
 
 ## Getting Started
@@ -14,27 +14,14 @@ npm install -g yo
 Install generator-wp-underscores
 
 ```
-npm install -g generator-wp-underscores
+npm install -g generator-sage
 ```
 
 Create a folder in your WordPress themes folder and initiate the generator
 
 ```
 mkdir theme-name && cd $_
-yo wp-underscores
+yo sage
 ```
 
 Answer some questions in the prompt and you're done!
-
-Run
-
-```
-grunt
-```
-to watch `.scss` files and live reload!
-
-**Note:** live reload works only if you're working on localhost, 192.168.50.4, or an URL ending in .dev
-
-## License
-
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)
