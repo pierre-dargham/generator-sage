@@ -21,7 +21,7 @@ SageGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
   // have Yeoman greet the user.
-  console.log('Sage generator version 0.1.0');
+  console.log('Sage generator version 0.1.1');
 
   var prompts = [
   {
