@@ -75,7 +75,7 @@ SageGenerator.prototype.askFor = function askFor() {
 };
 
 SageGenerator.prototype.installsage = function installsage() {
-  this.startertheme = 'https://github.com/roots/sage/archive/master.tar.gz';
+  this.startertheme = 'https://github.com/roots/sage/archive/8.5.0.tar.gz';
   this.log.info('Downloading & extracting ' + chalk.yellow('sage'));
   this.tarball(this.startertheme, '.', this.async());
 };
